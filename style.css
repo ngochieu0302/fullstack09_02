@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-section{
+    background-image: url('./assets/images/background.jpg');
+    background-size: auto;
+    color: #fff;
+}
+.home-content{
+    text-align: center;
+}
+.home-header ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+
+}
+.home-header ul li{
+    list-style: none;
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    
+}
+a:hover{
+    background: red;
+}
+.mennu{
+    text-align: center;
+    background-color: black;
+}
