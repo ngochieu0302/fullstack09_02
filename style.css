@@ -28,8 +28,8 @@ a.goto-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 0px;
-    gap: 20px;
+    padding: 1.25rem 0px;
+    gap: 1.25rem;
 }
 .main-logo{
     width: 17px;
@@ -40,25 +40,34 @@ a.goto-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 90%;
+    text-align: center;
 }
 .home-header ul li{
     list-style: none;
     height: 37px;
     line-height: 37px;
     border-radius: 5px;
-    padding: 0px 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    font-weight: bold;
 }
-.home-header ul li:hover{
-    background-color: #48602f;
+.menu-item{
+    flex-shrink: 0;
+    font-weight: 300;
+    flex-grow: 1;
+}
+.menu-logo{
+    flex-grow: 2;
+}
+.menu-contact{
+    flex-grow: 2;
+}
+.menu-item:hover{
+    background-color: #707c8626;
     cursor: pointer;
-}
-.home-header ul li a:hover{
-    color: #f2f3f4;
 }
 .home-content{
     text-align: center;
@@ -67,19 +76,25 @@ a.goto-content{
     width: 100%;
 }
 /* CSS class body-section */
+.body-section{
+    display: block;
+    justify-content: center;
+}
 .first-content{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
     margin-top: 3.75rem;
-    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 .box{
     display: flex;
     flex-grow: 1;
     gap: 10px;
-    max-width: 23%;
+    max-width: 30%;
     margin: 10px;
 }
 .box:not(:last-child){
@@ -88,7 +103,6 @@ a.goto-content{
 }
 .box img{
     max-width: 9.375rem;
-    margin-right: 1.25rem;
 }
 /* CSS class second-content */
 .second-content{
@@ -108,4 +122,71 @@ a.goto-content{
 }
 .box-text-2{
     max-width: 35%;
+}
+/* CSS class third-content */
+.third-content{
+    margin-top: 3.75rem;
+    background-color: #f2f3f4;
+    background-image: url("./assets/images/background_section_2.png");
+}
+.text-third-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25.75rem;
+    width: 90%;
+    text-align: center;
+    padding: 4rem;
+}
+.text-paragraph-third-content{
+    font-family: Lyon;
+    font-size: 1.5rem;
+}
+/* CSS class fourth-content */
+.fourth-content-box{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 3.75rem;
+}
+.fourth-content-box:nth-child(even) .fourth-content-text{
+    order: 1;
+}
+.fourth-content-box:nth-child(even) .fourth-content-img{
+    order: 2;
+}
+
+.fourth-content-img{
+    height: 33rem;
+}
+.fourth-content-text{
+    background-color: #f2f3f4;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fourth-content-text-1{
+    border-bottom: 1px solid #00000026;
+    padding-bottom: 1.25rem;
+}
+/* CSS class footer-section */
+.footer-section{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #00000026;
+    margin-top: 3.75rem;
+    text-align: center;
+}
+.card-footer-item{
+    padding: 3.75rem;
+    flex-grow: 1;
+}
+.card-footer-item:not(:last-child){
+    border-right: 1px solid #00000026;
+}
+.image-footer{
+    max-width: 12.5625rem;
 }
